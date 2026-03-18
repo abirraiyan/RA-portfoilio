@@ -1,13 +1,7 @@
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { SiFiverr } from "react-icons/si";
 import "./styles/SocialIcons.css";
-import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
-import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -17,11 +11,11 @@ const SocialIcons = () => {
       const elem = item as HTMLElement;
       const link = elem.querySelector("a") as HTMLElement;
 
-      const rect = elem.getBoundingClientRect();
-      let mouseX = rect.width / 2;
-      let mouseY = rect.height / 2;
-      let currentX = 0;
-      let currentY = 0;
+      const initialRect = elem.getBoundingClientRect();
+      let mouseX = initialRect.width / 2 || 25;
+      let mouseY = initialRect.height / 2 || 25;
+      let currentX = 25;
+      let currentY = 25;
 
       const updatePosition = () => {
         currentX += (mouseX - currentX) * 0.1;
@@ -34,6 +28,7 @@ const SocialIcons = () => {
       };
 
       const onMouseMove = (e: MouseEvent) => {
+        const rect = elem.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
@@ -60,32 +55,31 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/rajeshchityal" target="_blank">
+          <a href="https://github.com/abirraiyan" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com/in/rajeshchityal" target="_blank">
+          <a href="https://www.linkedin.com/in/md-harun-ur-raiyan-abir-4a2507257/" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href="https://x.com/rajeshchityal" target="_blank">
-            <FaXTwitter />
+          <a href="https://www.facebook.com/raiyan.abir.9/" target="_blank">
+            <FaFacebook />
           </a>
         </span>
         <span>
-          <a href="https://www.instagram.com/rajeshchityal" target="_blank">
+          <a href="https://www.instagram.com/abi_abiosis_?igsh=N3dyZjhuaW5zM202&utm_source=qr" target="_blank">
             <FaInstagram />
           </a>
         </span>
-      </div>
-      <a className="resume-button" href="#">
-        <HoverLinks text="RESUME" />
         <span>
-          <TbNotes />
+          <a href="https://www.fiverr.com/s/ljemyWR" target="_blank">
+            <SiFiverr />
+          </a>
         </span>
-      </a>
+      </div>
     </div>
   );
 };

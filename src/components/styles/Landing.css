@@ -186,8 +186,8 @@
 .landing-intro h1 {
   margin: 0;
   letter-spacing: 2px;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 500;
   font-family: "Geist", sans-serif;
 }
@@ -206,7 +206,7 @@
 }
 
 .landing-info h3 {
-  font-size: 22px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 300;
   color: var(--accentColor);
@@ -219,8 +219,8 @@
   margin-left: 20px;
   font-family: "Geist", sans-serif;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 24px;
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -235,7 +235,7 @@
 
 h2.landing-info-h2 {
   color: #14b8a6;
-  font-size: 42px;
+  font-size: 24px;
   width: 120%;
   margin: 0;
   font-family: "Geist", sans-serif;
@@ -272,7 +272,7 @@ h2.landing-info-h2 {
   }
 
   .landing-info h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .landing-intro h2 {
@@ -280,17 +280,17 @@ h2.landing-info-h2 {
   }
 
   .landing-intro h1 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .landing-info h2 {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   h2.landing-info-h2 {
-    font-size: 38px;
+    font-size: 28px;
   }
 }
 
@@ -304,21 +304,21 @@ h2.landing-info-h2 {
   }
 
   .landing-intro h1 {
-    font-size: 40px;
-    line-height: 35px;
+    font-size: 32px;
+    line-height: 36px;
   }
 
   .landing-info h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .landing-info h2 {
-    font-size: 45px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 36px;
   }
 
   h2.landing-info-h2 {
-    font-size: 55px;
+    font-size: 40px;
   }
 }
 
@@ -378,20 +378,20 @@ h2.landing-info-h2 {
   }
 
   .landing-intro h1 {
-    font-size: 60px;
-    line-height: 55px;
+    font-size: 44px;
+    line-height: 48px;
   }
 
   .landing-info h3 {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   .landing-info h2 {
-    font-size: 65px;
-    line-height: 62px;
+    font-size: 44px;
+    line-height: 48px;
   }
 
   h2.landing-info-h2 {
-    font-size: 75px;
+    font-size: 56px;
   }
 }

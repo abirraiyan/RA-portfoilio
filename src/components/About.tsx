@@ -6,11 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Full Stack Developer with 4+ years of experience building scalable web
-          applications using React.js, Angular, Next.js, Node.js, and NestJS. Skilled
-          in microservices architecture, CMS development, and low-code platforms.
-          Passionate about creating high-performance, production-ready solutions
-          from concept to deployment.
+          Computer Science graduate from United International University (UIU) with hands-on experience in MERN stack development and ongoing training in Flutter. Skilled in building scalable, user-focused applications with clean and efficient code.
+        </p>
+        <br />
+        <p className="para">
+          Experienced as an IT Manager at Combined Fashions and currently working as a Senior Software Engineer at Xceptionist, developing robust and high-performance software solutions. Passionate about solving real-world problems and continuously growing as a developer.
         </p>
       </div>
     </div>

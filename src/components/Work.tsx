@@ -5,35 +5,25 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Xceptionist Website",
+    category: "Corporate Website",
+    tools: "Web Development",
+    image: "/images/xceptionist.jpg",
+    link: "https://xceptionist.com/",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "Combined Fashions",
+    category: "Company Website",
+    tools: "Web Development",
+    image: "/images/combined.jpg",
+    link: "https://www.combinedfashions.com/",
   },
-  {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
-  },
+  // {
+  //   title: "Krishieasy",
+  //   category: "Farming Web App (Frontend)",
+  //   tools: "React.js, Tailwind CSS, DaisyUI",
+  //   image: "/images",
+  // },
 ];
 
 const Work = () => {
@@ -115,7 +105,13 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      {project.link ? (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" data-cursor="disable" style={{ display: "block", width: "100%", height: "100%" }}>
+                          <WorkImage image={project.image} alt={project.title} />
+                        </a>
+                      ) : (
+                        <WorkImage image={project.image} alt={project.title} />
+                      )}
                     </div>
                   </div>
                 </div>

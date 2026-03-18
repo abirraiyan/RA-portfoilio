@@ -53,16 +53,17 @@
 
 .career-info-in {
   display: flex;
-  width: 40%;
+  width: 45%;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
 }
 
 .career-info h3 {
-  font-size: 48px;
+  font-size: 32px;
   margin: 0;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 36px;
+  white-space: nowrap;
 }
 
 .career-info h4 {
@@ -159,7 +160,7 @@
   }
 
   .career-info h3 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .career-info-box p {
@@ -167,8 +168,8 @@
   }
 
   .career-info-in {
-    width: 45%;
-    gap: 20px;
+    width: 50%;
+    gap: 15px;
   }
 
   .career-info-box p {
@@ -225,7 +226,7 @@
   }
 
   .career-info h3 {
-    font-size: 33px;
+    font-size: 24px;
   }
 
   .career-info-in,

@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { MdMenu, MdClose } from "react-icons/md";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
@@ -9,6 +10,7 @@ gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -43,29 +45,37 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RC
+          RA
         </a>
         <a
-          href="mailto:rajeshchittyal21@gmail.com"
+          href="mailto:raiyan.abir@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          rajeshchittyal21@gmail.com
+          raiyan.abir@gmail.com
         </a>
-        <ul>
-          <li>
+        <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <MdClose size={28} /> : <MdMenu size={28} />}
+        </div>
+        <ul className={isOpen ? "nav-links open" : "nav-links"}>
+          <li onClick={() => setIsOpen(false)}>
             <a data-href="#about" href="#about">
               <HoverLinks text="ABOUT" />
             </a>
           </li>
-          <li>
+          <li onClick={() => setIsOpen(false)}>
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
             </a>
           </li>
-          <li>
+          <li onClick={() => setIsOpen(false)}>
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
+            </a>
+          </li>
+          <li className="mobile-email" onClick={() => setIsOpen(false)}>
+            <a href="mailto:raiyan.abir@gmail.com" data-cursor="disable">
+              raiyan.abir@gmail.com
             </a>
           </li>
         </ul>
